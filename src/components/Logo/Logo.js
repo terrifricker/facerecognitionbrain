@@ -1,4 +1,4 @@
-import logo from './black-white-logo.png'
+import logo from './brain.png'
 
 function Logo() {
     return (
