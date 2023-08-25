@@ -1,4 +1,4 @@
-import logo from './favicon-frickersolutions.png'
+import logo from './orange-black-logo.png'
 
 const Logo = () => {
     return (
