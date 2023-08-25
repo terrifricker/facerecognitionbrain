@@ -1,6 +1,6 @@
 import logo from './orange-black-logo.png'
 
-const Logo = () => {
+function Logo() {
     return (
        <>
             <img src={logo}

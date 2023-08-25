@@ -1,5 +1,5 @@
 
-const Navigation = () => {
+function Navigation() {
     return (
         <nav>
             <p>Sign Out</p>
