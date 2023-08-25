@@ -1,3 +1,7 @@
+:root {
+  --color1: rgb(250, 214, 145);
+  --color2: rgb(252, 181, 217);
+}
 * {
   box-sizing: border-box;
 }
@@ -5,7 +9,7 @@ body {
   margin: 0;
   padding: 5rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: linear-gradient(to right, rgb(250, 214, 145), rgb(252, 181, 217));
+  background: linear-gradient(to right, var(--color1), var(--color2));
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
