@@ -1,8 +1,9 @@
+import './Navigation.css'
 
 function Navigation() {
     return (
         <nav>
-            <p>Sign Out</p>
+            <button className="navigation-button">Sign Out</button>
         </nav>
     )
 }
