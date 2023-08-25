@@ -5,6 +5,7 @@ const Logo = () => {
        <>
             <img src={logo}
                 alt="Fricker Solutions Logo"
+                width={200}
             />
        </>
     )
