@@ -2,8 +2,8 @@
 function Rank() {
     return (
         <>
-            <h2>Terri Fricker, your current rank is ...</h2>
-            <h3>5</h3>
+            <h2>Terri, your current rank is ...</h2>
+            <h2>5</h2>
         </>
     )
 }
