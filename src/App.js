@@ -12,14 +12,19 @@ function App() {
   const handleOnChange = (event) => {
     console.log(event.target.value)
   }
-
+  function handleClick() {
+    console.log('clicked')
+  }
 
   return (
     <div className="App">
       <Navigation />
       <Logo />
       <Rank />
-      <ImageLinkForm handleOnChange={handleOnChange}/>
+      <ImageLinkForm 
+        handleOnChange={handleOnChange}
+        handleClick={handleClick}
+      />
       <FaceRecognition />
     </div>
   );

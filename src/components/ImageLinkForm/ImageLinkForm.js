@@ -1,5 +1,5 @@
 
-function ImageLinkForm({ handleOnChange }) {
+function ImageLinkForm({ handleOnChange, handleClick }) {
 
     return (
         <>
@@ -10,7 +10,7 @@ function ImageLinkForm({ handleOnChange }) {
                 onChange={handleOnChange}
                 type="text" 
                 placeholder="Enter url for image" />
-            <button>Detect</button>
+            <button onClick={handleClick}>Detect</button>
         </>
     )
 }
