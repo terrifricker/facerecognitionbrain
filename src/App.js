@@ -9,11 +9,11 @@ import FaceRecognition from './components/FaceRecognition/FaceRecognition.js'
 function App() {
   // const [imageUrl, setImageUrl] = useState('');
 
-  const handleOnChange = (event) => {
+  function handleOnChange(event) {
     console.log(event.target.value)
   }
-  function handleClick() {
-    console.log('clicked')
+  function handleClick(event) {
+    console.log('clicked', event.target)
   }
 
   return (
