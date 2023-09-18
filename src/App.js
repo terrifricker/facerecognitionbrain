@@ -57,7 +57,9 @@ export default function App() {
         handleOnChange={handleOnChange}
         handleClick={handleClick}
       />
-      <FaceRecognition />
+      <FaceRecognition 
+        imageUrl={imageUrl}
+      />
     </div>
   );
 }
