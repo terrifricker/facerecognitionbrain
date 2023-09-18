@@ -21,7 +21,7 @@ export default function App() {
     const USER_ID = 'clarifai';       
     const APP_ID = 'main';
     const MODEL_ID = 'face-detection';
-    const IMAGE_URL = 'https://samples.clarifai.com/metro-north.jpg';
+    const IMAGE_URL = {imageUrl};
 
     // create http request body
     const raw = JSON.stringify({
