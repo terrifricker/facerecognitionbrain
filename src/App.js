@@ -8,10 +8,11 @@ import FaceRecognition from './components/FaceRecognition/FaceRecognition.js'
 
 export default function App() {
 
-  const [imageUrl, setimageUrl] = useState('https://samples.clarifai.com/metro-north.jpg') 
+  const [imageUrl, setImageUrl] = useState('https://samples.clarifai.com/metro-north.jpg') 
 
   function handleOnChange(event) {
     console.log(event.target.value)
+    setImageUrl(event.target.value)
   }
 
   function handleClick(event) {
