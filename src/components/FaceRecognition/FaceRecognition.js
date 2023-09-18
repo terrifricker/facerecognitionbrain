@@ -1,10 +1,10 @@
 import './FaceRecognition.css'
 
-export default function FaceRecognition() {
+export default function FaceRecognition( { imageUrl }) {
     return (
         <>
             <div className="face-recognition-box">
-                <img src='https://samples.clarifai.com/metro-north.jpg' alt="faces"></img>
+                <img src={imageUrl} alt="faces"></img>
             </div>
         </>
     )
