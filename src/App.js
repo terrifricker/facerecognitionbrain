@@ -1,4 +1,5 @@
-import './App.css';
+import './App.css'
+import { useState } from 'react'
 import Navigation from './components/Navigation/Navigation.js'
 import Logo from './components/Logo/Logo.js'
 import Rank from './components/Rank/Rank.js'
@@ -6,6 +7,8 @@ import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm.js'
 import FaceRecognition from './components/FaceRecognition/FaceRecognition.js'
 
 export default function App() {
+
+  const [imageUrl, setimageUrl] = useState('https://samples.clarifai.com/metro-north.jpg') 
 
   function handleOnChange(event) {
     console.log(event.target.value)
