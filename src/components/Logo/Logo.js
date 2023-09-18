@@ -2,7 +2,7 @@ import logo from './brain.png'
 import Tilt from 'react-parallax-tilt';
 import './Logo.css'
 
-function Logo() {
+export default function Logo() {
     return (
        <>
             <Tilt className='Tilt'>
@@ -14,5 +14,3 @@ function Logo() {
        </>
     )
 }
-
-export default Logo;

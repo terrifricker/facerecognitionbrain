@@ -1,6 +1,6 @@
 import './FaceRecognition.css'
 
-function FaceRecognition() {
+export default function FaceRecognition() {
     return (
         <>
             <div className="face-recognition-box">
@@ -9,5 +9,3 @@ function FaceRecognition() {
         </>
     )
 }
-
-export default FaceRecognition;

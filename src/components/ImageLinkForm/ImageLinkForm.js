@@ -1,5 +1,5 @@
 
-function ImageLinkForm({ handleOnChange, handleClick }) {
+export default function ImageLinkForm({ handleOnChange, handleClick }) {
 
     return (
         <>
@@ -14,5 +14,3 @@ function ImageLinkForm({ handleOnChange, handleClick }) {
         </>
     )
 }
-
-export default ImageLinkForm;

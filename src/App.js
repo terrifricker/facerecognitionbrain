@@ -5,7 +5,7 @@ import Rank from './components/Rank/Rank.js'
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm.js'
 import FaceRecognition from './components/FaceRecognition/FaceRecognition.js'
 
-function App() {
+export default function App() {
 
   function handleOnChange(event) {
     console.log(event.target.value)
@@ -58,5 +58,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

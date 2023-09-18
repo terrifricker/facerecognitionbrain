@@ -1,5 +1,5 @@
 
-function Rank() {
+export default function Rank() {
     return (
         <>
             <h2>Terri, your current rank is ...</h2>
@@ -7,5 +7,3 @@ function Rank() {
         </>
     )
 }
-
-export default Rank;
