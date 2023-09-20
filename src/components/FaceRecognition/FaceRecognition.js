@@ -1,6 +1,10 @@
 import './FaceRecognition.css'
 
 export default function FaceRecognition( { imageUrl }) {
+
+    if(!imageUrl) {
+        return null
+    }
     return (
         <>
             <div className="face-recognition-box">
