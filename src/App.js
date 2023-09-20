@@ -7,23 +7,20 @@ import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm.js'
 import FaceRecognition from './components/FaceRecognition/FaceRecognition.js'
 
 export default function App() {
-
-  const [imageUrl, setImageUrl] = useState('https://samples.clarifai.com/metro-north.jpg') 
+  const [input, setInput] = useState('')
 
   function handleOnChange(event) {
-    console.log(event.target.value)
-    setImageUrl(event.target.value)
+    setInput(event.target.value)
   }
 
-  function handleClick(event) {
-    console.log('clicked', event.target)
+  function handleClick() {
+
     // Clarifai constants
     const PAT = '73efbfec471a4b578501aff88a982de8';
     const USER_ID = 'clarifai';       
     const APP_ID = 'main';
     const MODEL_ID = 'face-detection';
-    const IMAGE_URL = {imageUrl};
-
+    const IMAGE_URL = input;
     // create http request body
     const raw = JSON.stringify({
       "user_app_id": {
@@ -59,7 +56,7 @@ export default function App() {
         handleClick={handleClick}
       />
       <FaceRecognition 
-        imageUrl={imageUrl}
+        imageUrl={input}
       />
     </div>
   );
