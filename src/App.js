@@ -41,8 +41,7 @@ export default function App() {
         body: raw
     };
     fetch("https://api.clarifai.com/v2/models/" + MODEL_ID + "/outputs", requestOptions)
-    .then(response => response.text())
-    .then(result => console.log(result))
+    .then(response => response.json())
     .catch(error => console.log('error', error));
   }
 
