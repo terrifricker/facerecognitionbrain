@@ -14,7 +14,7 @@ export default function Image( { imageUrl, box }) {
     if(!box.top_row) {
         return (
             <>
-                <div className="face-recognition-box">
+                <div className="image-box">
                     <img src={imageUrl} alt="face"></img>
                 </div>
             </>
