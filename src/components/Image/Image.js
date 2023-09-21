@@ -21,6 +21,7 @@ export default function Image( { imageUrl, box }) {
     const image = document.querySelector("#image")
     const width = image.width
     const height = image.height
+
     return (
         <>
             <div className="image-box">
