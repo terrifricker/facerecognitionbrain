@@ -5,11 +5,13 @@ export default function SignIn() {
         <>
             <form className="sign-in-form">
                 <h2>Sign In</h2>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" />
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" />
-                <button type="submit" value="Sign In"/>
+                <label>
+                    Email <input type="email" name="email"/>
+                </label>
+                <label>
+                    Password <input type="password" name="password"/>
+                </label>
+                <button type="submit">Sign In</button>
             </form>
         </>
     )

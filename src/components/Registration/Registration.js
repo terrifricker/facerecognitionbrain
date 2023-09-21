@@ -5,13 +5,16 @@ export default function Registration() {
         <>
             <form className="registration-form">
                 <h2>Register</h2>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" />
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" />
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" />
-                <button type="submit" value="Sign In"/>
+                <label>
+                    Name <input name="name"/>
+                </label>
+                <label>
+                    Email <input type="email" name="email"/>
+                </label>
+                <label>
+                    Password <input type="password" name="password"/>
+                </label>
+                <button type="submit">Register</button>
             </form>
         </>
     )
