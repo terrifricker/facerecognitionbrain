@@ -1,5 +1,4 @@
 .bounding-box {
-    width: 100px;
-    height: 100px;
+    position: absolute;
     border: 2pt solid dodgerblue;
 }
