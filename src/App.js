@@ -15,7 +15,6 @@ export default function App() {
   }
 
   function handleClick() {
-
     // Clarifai constants
     const PAT = '73efbfec471a4b578501aff88a982de8';
     const USER_ID = 'clarifai';       
@@ -43,9 +42,7 @@ export default function App() {
     };
     fetch("https://api.clarifai.com/v2/models/" + MODEL_ID + "/outputs", requestOptions)
     .then(response => response.json())
-    .then(result => console.log(
-      result.outputs[0].data.regions
-      ))
+    .then(result => setBox(result.outputs[0].data.regions[0].region_info.bounding_box))
     .catch(error => console.log('error', error));
   }
 
@@ -60,6 +57,7 @@ export default function App() {
       />
       <FaceRecognition 
         imageUrl={input}
+        box={box}
       />
     </div>
   );
