@@ -4,9 +4,6 @@ import FaceBox from '../FaceBox/FaceBox.js'
 
 export default function Image( { imageUrl, box }) {
 
-    console.log("Entering Image component")
-    console.log(box)
-
     if(!imageUrl) {
         return null
     }
@@ -15,17 +12,24 @@ export default function Image( { imageUrl, box }) {
         return (
             <>
                 <div className="image-box">
-                    <img src={imageUrl} alt="face"></img>
+                    <img src={imageUrl} alt="face" id="image"></img>
                 </div>
             </>
         )
     }
 
+    const image = document.querySelector("#image")
+    const width = image.width
+    const height = image.height
     return (
         <>
-            <div className="face-recognition-box">
-                <img src={imageUrl} alt="face"></img>
-                <FaceBox box={box} />
+            <div className="image-box">
+                <img src={imageUrl} alt="face" id="image"></img>
+                <FaceBox 
+                    box={box}
+                    width={width}
+                    height={height}
+                />
             </div>
         </>
     )
