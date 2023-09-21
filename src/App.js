@@ -8,6 +8,7 @@ import FaceRecognition from './components/FaceRecognition/FaceRecognition.js'
 
 export default function App() {
   const [input, setInput] = useState('')
+  const [box, setBox] = useState({})
 
   function handleOnChange(event) {
     setInput(event.target.value)
