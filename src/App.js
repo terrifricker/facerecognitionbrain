@@ -1,8 +1,9 @@
 import './App.css'
 import { useState } from 'react'
 import Navigation from './components/Navigation/Navigation.js'
-import Logo from './components/Logo/Logo.js'
+import Registration from './components/Registration/Registration.js'
 import SignIn from './components/SignIn/SignIn.js'
+import Logo from './components/Logo/Logo.js'
 import Rank from './components/Rank/Rank.js'
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm.js'
 import Image from './components/Image/Image.js'
@@ -50,6 +51,7 @@ export default function App() {
   return (
     <div className="App">
       <Navigation />
+      <Registration />
       <SignIn />
       <Logo />
       <Rank />
