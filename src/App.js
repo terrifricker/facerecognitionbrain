@@ -4,7 +4,7 @@ import Navigation from './components/Navigation/Navigation.js'
 import Logo from './components/Logo/Logo.js'
 import Rank from './components/Rank/Rank.js'
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm.js'
-import FaceRecognition from './components/FaceRecognition/FaceRecognition.js'
+import Image from './components/Image/Image.js'
 
 export default function App() {
   const [input, setInput] = useState('')
@@ -55,7 +55,7 @@ export default function App() {
         handleOnChange={handleOnChange}
         handleClick={handleClick}
       />
-      <FaceRecognition 
+      <Image 
         imageUrl={input}
         box={box}
       />
