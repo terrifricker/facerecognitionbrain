@@ -5,13 +5,13 @@ export default function FaceBox( { box, width, height }) {
 
     const top = box.top_row * height
     const left = box.left_col * width
-    const bottom = box.bottom_row * height
-    const right = box.right_col * width
+    const boxWidth = (box.right_col - box.left_col) * width
+    const boxHeight = (box.bottom_row - box.top_row) * height
 
     return (
         <>
             <div className="bounding-box" 
-                style={{top: top, left: left, bottom: bottom, right: right}}>
+                style={{width: boxWidth, height: boxHeight, top: top, left: left}}>
             </div>
         </>
     )
