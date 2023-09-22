@@ -13,8 +13,12 @@ export default function App() {
   const [box, setBox] = useState({})
   const [route, setRoute] = useState('signin')
 
-  function handleSubmit(event) {
+  function handleSubmit() {
     setRoute('home')
+  }
+
+  function handleRegister() {
+    setRoute('register')
   }
 
   function handleOnChange(event) {
@@ -59,7 +63,16 @@ export default function App() {
         <Navigation />
         <SignIn 
           route={route}
-          handleSubmit={handleSubmit}/>
+          handleSubmit={handleSubmit}
+          handleRegister={handleRegister}/>
+      </div>
+    )
+  }
+  if (route === 'register') {
+    return(
+      <div className="App">
+        <Navigation />
+        <Registration />
       </div>
     )
   }

@@ -1,6 +1,6 @@
 import './SignIn.css'
 
-export default function SignIn({ route , handleSubmit}) {
+export default function SignIn({ route , handleSubmit, handleRegister}) {
 
     return (
         <>
@@ -17,6 +17,10 @@ export default function SignIn({ route , handleSubmit}) {
                     onClick={handleSubmit}>
                     Sign In
                 </button>
+                <p 
+                    onClick={handleRegister}>
+                    Need to Register?
+                </p>
             </form>
         </>
     )
