@@ -62,7 +62,6 @@ export default function App() {
       <div className="App">
         <Navigation />
         <SignIn 
-          route={route}
           handleSubmit={handleSubmit}
           handleRegister={handleRegister}/>
       </div>

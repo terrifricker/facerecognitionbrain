@@ -1,6 +1,6 @@
 import './SignIn.css'
 
-export default function SignIn({ route , handleSubmit, handleRegister}) {
+export default function SignIn({handleSubmit, handleRegister}) {
 
     return (
         <>
