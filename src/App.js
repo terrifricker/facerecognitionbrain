@@ -53,7 +53,7 @@ export default function App() {
     return (
       <div className="App">
         <Navigation />
-        <SignIn />
+        <SignIn route={route}/>
       </div>
     )
   }
@@ -61,7 +61,7 @@ export default function App() {
     <div className="App">
       <Navigation />
       <Registration />
-      <SignIn />
+      <SignIn route={route}/>
       <Logo />
       <Rank />
       <ImageLinkForm 

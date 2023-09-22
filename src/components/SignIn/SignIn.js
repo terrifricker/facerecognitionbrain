@@ -1,6 +1,6 @@
 import './SignIn.css'
 
-export default function SignIn() {
+export default function SignIn({ route }) {
     return (
         <>
             <form className="sign-in-form">
