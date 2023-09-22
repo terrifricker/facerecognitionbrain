@@ -57,7 +57,9 @@ export default function App() {
     return (
       <div className="App">
         <Navigation />
-        <SignIn route={route}/>
+        <SignIn 
+          route={route}
+          handleSubmit={handleSubmit}/>
       </div>
     )
   }
