@@ -49,6 +49,14 @@ export default function App() {
     .catch(error => console.log('error', error));
   }
 
+  if (route === 'signin') {
+    return (
+      <div className="App">
+        <Navigation />
+        <SignIn />
+      </div>
+    )
+  }
   return (
     <div className="App">
       <Navigation />
