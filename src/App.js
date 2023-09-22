@@ -21,6 +21,9 @@ export default function App() {
     setRoute('register')
   }
 
+  function handleSignOut() {
+    setRoute('signin')
+  }
   function handleOnChange(event) {
     setInput(event.target.value)
   }
@@ -60,7 +63,6 @@ export default function App() {
   if (route === 'signin') {
     return (
       <div className="App">
-        <Navigation />
         <SignIn 
           handleSubmit={handleSubmit}
           handleRegister={handleRegister}
@@ -71,7 +73,6 @@ export default function App() {
   if (route === 'register') {
     return(
       <div className="App">
-        <Navigation />
         <Registration 
           handleSubmit={handleSubmit}
         />
@@ -81,7 +82,9 @@ export default function App() {
   if (route === 'home')
   return (
     <div className="App">
-      <Navigation />
+      <Navigation 
+        handleSignOut={handleSignOut}
+      />
       <Logo />
       <Rank />
       <ImageLinkForm 
