@@ -1,6 +1,7 @@
 import './SignIn.css'
 
 export default function SignIn({ route , handleSubmit}) {
+
     return (
         <>
             <form className="sign-in-form">
@@ -11,7 +12,11 @@ export default function SignIn({ route , handleSubmit}) {
                 <label>
                     Password <input type="password" name="password"/>
                 </label>
-                <button type="submit">Sign In</button>
+                <button 
+                    type="submit"
+                    onClick={handleSubmit}>
+                    Sign In
+                </button>
             </form>
         </>
     )
