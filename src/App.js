@@ -13,6 +13,10 @@ export default function App() {
   const [box, setBox] = useState({})
   const [route, setRoute] = useState('signin')
 
+  function handleSubmit(event) {
+    setRoute('home')
+  }
+
   function handleOnChange(event) {
     setInput(event.target.value)
   }
