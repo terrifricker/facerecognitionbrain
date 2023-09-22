@@ -11,6 +11,7 @@ import Image from './components/Image/Image.js'
 export default function App() {
   const [input, setInput] = useState('')
   const [box, setBox] = useState({})
+  const [route, setRoute] = useState('signin')
 
   function handleOnChange(event) {
     setInput(event.target.value)
