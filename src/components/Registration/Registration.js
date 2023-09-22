@@ -1,6 +1,6 @@
 import './Registration.css'
 
-export default function Registration() {
+export default function Registration({handleSubmit}) {
     return (
         <>
             <form className="registration-form">
@@ -14,7 +14,10 @@ export default function Registration() {
                 <label>
                     Password <input type="password" name="password"/>
                 </label>
-                <button type="submit">Register</button>
+                <button 
+                    type="submit"
+                    onClick={handleSubmit}>
+                    Register</button>
             </form>
         </>
     )

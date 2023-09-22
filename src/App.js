@@ -63,7 +63,8 @@ export default function App() {
         <Navigation />
         <SignIn 
           handleSubmit={handleSubmit}
-          handleRegister={handleRegister}/>
+          handleRegister={handleRegister}
+        />
       </div>
     )
   }
@@ -71,7 +72,9 @@ export default function App() {
     return(
       <div className="App">
         <Navigation />
-        <Registration />
+        <Registration 
+          handleSubmit={handleSubmit}
+        />
       </div>
     )
   }
