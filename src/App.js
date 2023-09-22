@@ -63,11 +63,10 @@ export default function App() {
       </div>
     )
   }
+  if (route === 'home')
   return (
     <div className="App">
       <Navigation />
-      <Registration />
-      <SignIn route={route}/>
       <Logo />
       <Rank />
       <ImageLinkForm 
