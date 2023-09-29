@@ -17,6 +17,9 @@ export default function App() {
     setRoute('home')
   }
 
+  function handleNeedToRegister() {
+    setRoute('register')
+  }
   function handleRegister() {
     setRoute('home')
   }
@@ -65,7 +68,7 @@ export default function App() {
       <div className="App">
         <SignIn 
           handleSignIn={handleSignIn}
-          handleRegister={handleRegister}
+          handleNeedToRegister={handleNeedToRegister}
         />
       </div>
     )
@@ -74,7 +77,7 @@ export default function App() {
     return(
       <div className="App">
         <Registration 
-          handleSubmit={handleRegister}
+          handleRegister={handleRegister}
         />
       </div>
     )
