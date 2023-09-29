@@ -13,7 +13,7 @@ export default function App() {
   const [box, setBox] = useState({})
   const [route, setRoute] = useState('signin')
 
-  function handleSubmit() {
+  function handleSignIn() {
     setRoute('home')
   }
 
@@ -64,7 +64,7 @@ export default function App() {
     return (
       <div className="App">
         <SignIn 
-          handleSubmit={handleSubmit}
+          handleSignIn={handleSignIn}
           handleRegister={handleRegister}
         />
       </div>
