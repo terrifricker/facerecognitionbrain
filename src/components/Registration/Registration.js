@@ -1,6 +1,6 @@
 import './Registration.css'
 
-export default function Registration({handleSubmit}) {
+export default function Registration({handleRegister}) {
     return (
         <>
             <form className="registration-form">
@@ -16,7 +16,7 @@ export default function Registration({handleSubmit}) {
                 </label>
                 <button 
                     type="submit"
-                    onClick={handleSubmit}>
+                    onClick={handleRegister}>
                     Register</button>
             </form>
         </>

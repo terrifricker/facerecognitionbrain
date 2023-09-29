@@ -18,7 +18,7 @@ export default function App() {
   }
 
   function handleRegister() {
-    setRoute('register')
+    setRoute('home')
   }
 
   function handleSignOut() {
@@ -74,7 +74,7 @@ export default function App() {
     return(
       <div className="App">
         <Registration 
-          handleSubmit={handleSubmit}
+          handleSubmit={handleRegister}
         />
       </div>
     )
