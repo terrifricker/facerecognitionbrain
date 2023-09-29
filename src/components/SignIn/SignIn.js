@@ -1,6 +1,6 @@
 import './SignIn.css'
 
-export default function SignIn({handleSubmit, handleRegister}) {
+export default function SignIn({handleSignIn, handleNeedToRegister}) {
 
     return (
         <>
@@ -14,11 +14,11 @@ export default function SignIn({handleSubmit, handleRegister}) {
                 </label>
                 <button 
                     type="submit"
-                    onClick={handleSubmit}>
+                    onClick={handleSignIn}>
                     Sign In
                 </button>
                 <p 
-                    onClick={handleRegister}>
+                    onClick={handleNeedToRegister}>
                     Need to Register?
                 </p>
             </form>
