@@ -12,6 +12,7 @@ export default function App() {
   const [input, setInput] = useState('')
   const [box, setBox] = useState({})
   const [route, setRoute] = useState('signin')
+  // current route possibilites are signin, register, and home
 
   function handleSignIn() {
     setRoute('home')
