@@ -15,7 +15,11 @@ export default function App() {
   // current route possibilites are signin, register, and home
 
   function handleSignIn() {
-    setRoute('home')
+    // setRoute('home')
+    fetch('http://localhost:3000')
+      .then(response => response.json)
+      .then(data => console.log(data))
+      .catch(error => console.error(error))
   }
 
   function handleNeedToRegister() {
