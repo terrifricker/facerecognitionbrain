@@ -16,7 +16,7 @@ export default function App() {
 
   function handleSignIn() {
     // setRoute('home')
-    fetch('http://localhost:3000')
+    fetch('http://localhost:3001/')
       .then(response => response.json)
       .then(data => console.log(data))
       .catch(error => console.error(error))
