@@ -1,5 +1,7 @@
 import './App.css'
-import { useState, useEffect } from 'react'
+import { useState
+  //, useEffect 
+} from 'react'
 import Navigation from './components/Navigation/Navigation.js'
 import Registration from './components/Registration/Registration.js'
 import SignIn from './components/SignIn/SignIn.js'
@@ -14,31 +16,30 @@ export default function App() {
   const [route, setRoute] = useState('signin')
   // current route possibilites are signin, register, and home
 
-  useEffect(() => {
-    fetch('http://localhost:3001/')
-    .then(response => response.json())
-    .then(console.log)
-    .catch(error => console.error(error))
-  })
+  /* just testing to see that I can fetch from the server
+      useEffect(() => {
+        fetch('http://localhost:3001/')
+        .then(response => response.json())
+        .then(console.log)
+        .catch(error => console.error(error))
+      })
+  */
 
   function handleSignIn() {
     setRoute('home')
   }
-
   function handleNeedToRegister() {
     setRoute('register')
   }
   function handleRegister() {
     setRoute('home')
   }
-
   function handleSignOut() {
     setRoute('signin')
   }
   function handleOnChange(event) {
     setInput(event.target.value)
   }
-
   function handleClick() {
     // Clarifai constants
     const PAT = '73efbfec471a4b578501aff88a982de8';
