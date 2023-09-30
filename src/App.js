@@ -1,5 +1,5 @@
 import './App.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Navigation from './components/Navigation/Navigation.js'
 import Registration from './components/Registration/Registration.js'
 import SignIn from './components/SignIn/SignIn.js'
@@ -14,12 +14,15 @@ export default function App() {
   const [route, setRoute] = useState('signin')
   // current route possibilites are signin, register, and home
 
-  function handleSignIn() {
-    // setRoute('home')
+  useEffect(() => {
     fetch('http://localhost:3001/')
-      .then(response => response.json)
-      .then(data => console.log(data))
-      .catch(error => console.error(error))
+    .then(response => response.json)
+    .then(data => console.log(data))
+    .catch(error => console.error(error))
+  })
+
+  function handleSignIn() {
+    setRoute('home')
   }
 
   function handleNeedToRegister() {
