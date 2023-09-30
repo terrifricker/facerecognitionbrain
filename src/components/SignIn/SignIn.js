@@ -1,6 +1,9 @@
 import './SignIn.css'
+import { useState } from 'react'
 
 export default function SignIn({handleSignIn, handleNeedToRegister}) {
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
 
     return (
         <>
