@@ -13,6 +13,7 @@ export default function App() {
   const [box, setBox] = useState({})
   const [route, setRoute] = useState('signin')
   // current route possibilites are signin, register, and home
+  const [user, setUser] = useState({})
 
   useEffect(() => {
     fetch('http://localhost:3001/')
@@ -27,7 +28,8 @@ export default function App() {
   function handleNeedToRegister() {
     setRoute('register')
   }
-  function handleRegister() {
+  function handleRegister(data) {
+    setUser(data)
     setRoute('home')
   }
   function handleSignOut() {
