@@ -1,6 +1,10 @@
 import './Registration.css'
+import { useState } from 'react'
 
 export default function Registration({handleRegister}) {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
     return (
         <>
             <form className="registration-form">
