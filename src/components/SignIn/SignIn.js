@@ -21,7 +21,11 @@ export default function SignIn({handleSignIn, handleNeedToRegister}) {
             })
         })
         .then(response => response.json())
-        .then(console.log)
+        .then(data => {
+            if(data === 'Success'){
+                handleSignIn()
+            }
+        })
         .catch(error => console.error(error))
     }
 
