@@ -13,6 +13,7 @@ export default function App() {
   const [box, setBox] = useState({})
   const [route, setRoute] = useState('signin')
   // current route possibilites are signin, register, and home
+  const [user, setUser] = useState({})
 
   useEffect(() => {
     fetch('http://localhost:3001/')
