@@ -22,7 +22,8 @@ export default function App() {
     .catch(error => console.error(error))
   })
 
-  function handleSignIn() {
+  function handleSignIn(data) {
+    setUser(data)
     setRoute('home')
   }
   function handleNeedToRegister() {
