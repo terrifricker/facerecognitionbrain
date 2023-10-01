@@ -15,6 +15,26 @@ export default function Registration({handleRegister}) {
     function handleOnPasswordChange(event) {
         setPassword(event.target.value)
     }
+    function onSubmitRegister(event) {
+        event.preventDefault()
+        fetch('http://localhost:3001/register', { 
+            method: 'post',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                name: name,
+                email: email,
+                password: password
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if(data.name === name){
+                handleRegister()
+            }
+        })
+        .catch(error => console.error(error))
+    }
+
     return (
         <>
             <form className="registration-form">
@@ -42,7 +62,7 @@ export default function Registration({handleRegister}) {
                 </label>
                 <button 
                     type="submit"
-                    onClick={handleRegister}>
+                    onClick={onSubmitRegister}>
                     Register</button>
             </form>
         </>
