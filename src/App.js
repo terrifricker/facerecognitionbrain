@@ -24,21 +24,18 @@ export default function App() {
   function handleSignIn() {
     setRoute('home')
   }
-
   function handleNeedToRegister() {
     setRoute('register')
   }
   function handleRegister() {
     setRoute('home')
   }
-
   function handleSignOut() {
     setRoute('signin')
   }
   function handleOnChange(event) {
     setInput(event.target.value)
   }
-
   function handleClick() {
     // Clarifai constants
     const PAT = '73efbfec471a4b578501aff88a982de8';
