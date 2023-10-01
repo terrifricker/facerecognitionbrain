@@ -29,7 +29,7 @@ export default function Registration({handleRegister}) {
         .then(response => response.json())
         .then(data => {
             if(data.name === name){
-                handleRegister()
+                handleRegister(data)
             }
         })
         .catch(error => console.error(error))
