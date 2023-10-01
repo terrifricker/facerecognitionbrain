@@ -11,7 +11,8 @@ export default function SignIn({handleSignIn, handleNeedToRegister}) {
     function handleOnPasswordChange(event) {
         setPassword(event.target.value)
     }
-    function onSubmitSignIn() {
+    function onSubmitSignIn(event) {
+        event.preventDefault()
         fetch('http://localhost:3001/signin', { 
             method: 'post',
             headers: {'Content-Type': 'application/json'},
