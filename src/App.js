@@ -28,7 +28,8 @@ export default function App() {
   function handleNeedToRegister() {
     setRoute('register')
   }
-  function handleRegister() {
+  function handleRegister(data) {
+    setUser(data)
     setRoute('home')
   }
   function handleSignOut() {
