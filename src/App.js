@@ -22,7 +22,8 @@ export default function App() {
     .catch(error => console.error(error))
   })
 
-  function handleSignIn() {
+  function handleSignIn(data) {
+    setUser(data)
     setRoute('home')
   }
   function handleNeedToRegister() {
@@ -96,7 +97,10 @@ export default function App() {
         handleSignOut={handleSignOut}
       />
       <Logo />
-      <Rank />
+      <Rank 
+        name={user.name}
+        entries={user.entries}
+      />
       <ImageLinkForm 
         handleOnChange={handleOnChange}
         handleClick={handleClick}
