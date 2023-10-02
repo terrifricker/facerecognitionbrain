@@ -97,7 +97,10 @@ export default function App() {
         handleSignOut={handleSignOut}
       />
       <Logo />
-      <Rank />
+      <Rank 
+        name={user.name}
+        entries={user.entries}
+      />
       <ImageLinkForm 
         handleOnChange={handleOnChange}
         handleClick={handleClick}
