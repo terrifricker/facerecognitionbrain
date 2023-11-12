@@ -3,6 +3,7 @@ import './FaceBox.css'
 
 export default function FaceBox( { box, width, height }) {
 
+    // convert data to usable form for css
     const top = box.top_row * height
     const left = box.left_col * width
     const boxWidth = (box.right_col - box.left_col) * width
