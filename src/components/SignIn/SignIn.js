@@ -53,11 +53,12 @@ export default function SignIn({handleSignIn, handleNeedToRegister}) {
                     onClick={onSubmitSignIn}>
                     Sign In
                 </button>
-                <p 
+                <p id="register-instead"
                     onClick={handleNeedToRegister}>
                     Need to Register?
                 </p>
             </form>
+            <p id="hint">(Try 'sally@gmail.com' and 'bananas')</p>
         </>
     )
 }
