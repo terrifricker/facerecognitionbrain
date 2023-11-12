@@ -4,12 +4,12 @@ import FaceBox from '../FaceBox/FaceBox.js'
 
 export default function Image( { imageUrl, box }) {
 
-    if(!imageUrl) {
+    if(!imageUrl) { // if no image
         return null
     }
 
-    if(!box.top_row) {
-        return (
+    if(!box.top_row) { // if no box data
+        return (       // just return image
             <>
                 <div className="image-box">
                     <img src={imageUrl} alt="face" id="image"></img>
@@ -18,6 +18,7 @@ export default function Image( { imageUrl, box }) {
         )
     }
 
+    // get values needed to calculate css bounding box
     const image = document.querySelector("#image")
     const width = image.width
     const height = image.height

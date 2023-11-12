@@ -9,12 +9,14 @@ import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm.js'
 import Image from './components/Image/Image.js'
 
 export default function App() {
+  // declare state variables
   const [input, setInput] = useState('')
   const [box, setBox] = useState({})
   const [route, setRoute] = useState('signin')
   // current route possibilites are signin, register, and home
   const [user, setUser] = useState({})
 
+  // immediately connect to server
   useEffect(() => {
     fetch('http://localhost:3001/')
     .then(response => response.json())
@@ -22,6 +24,7 @@ export default function App() {
     .catch(error => console.error(error))
   })
 
+  // declare event handler functions
   function handleSignIn(data) {
     setUser(data)
     setRoute('home')
@@ -71,6 +74,7 @@ export default function App() {
     .catch(error => console.log('error', error));
   }
 
+  // routing
   if (route === 'signin') {
     return (
       <div className="App">
