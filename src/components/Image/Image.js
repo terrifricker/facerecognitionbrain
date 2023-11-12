@@ -11,7 +11,7 @@ export default function Image( { imageUrl, box }) {
     if(!box.top_row) { // if no box data
         return (       // just return image
             <>
-                <div className="image-box">
+                <div className="image-container">
                     <img src={imageUrl} alt="face" id="image"></img>
                 </div>
             </>
