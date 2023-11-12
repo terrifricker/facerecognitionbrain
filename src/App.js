@@ -72,6 +72,22 @@ export default function App() {
     .then(response => response.json())
     .then(result => setBox(result.outputs[0].data.regions[0].region_info.bounding_box))
     .catch(error => console.log('error', error));
+
+    //incremement user count
+    fetch('http://localhost:3001/image', { 
+      method: 'put',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+          id: user.id
+      })
+    })
+    .then(response => response.json())
+    .then(result => {
+      if(result !== 'User not found') {
+        setUser(Object.assign(user, {entries: result}))
+      }
+    })
+    .catch(error => console.log('error', error));
   }
 
   // routing
