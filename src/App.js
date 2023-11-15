@@ -17,14 +17,17 @@ export default function App() {
   const [user, setUser] = useState({})
 
   // declare event handler functions
-  function handleSignIn(data) {
-    setUser(data)
-    setRoute('home')
+  function handleGoToSignIn() {
+    setRoute('signin')
   }
   function handleGoToRegister() {
     setRoute('register')
   }
   function handleRegister(data) {
+    setUser(data)
+    setRoute('home')
+  }
+  function handleSignIn(data) {
     setUser(data)
     setRoute('home')
   }
