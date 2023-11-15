@@ -1,6 +1,7 @@
 import './App.css'
 import { useState } from 'react'
-import Navigation from './components/Navigation/Navigation.js'
+import SignOut from './components/SignOut/SignOut.js'
+import Header from './components/Header/Header.js'
 import Registration from './components/Registration/Registration.js'
 import SignIn from './components/SignIn/SignIn.js'
 import Logo from './components/Logo/Logo.js'
@@ -119,7 +120,7 @@ export default function App() {
   if (route === 'home')
   return (
     <div className="App">
-      <Navigation 
+      <SignOut 
         handleSignOut={handleSignOut}
       />
       <Logo />
