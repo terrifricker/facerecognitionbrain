@@ -10,7 +10,7 @@
     align-items: center;
     border: 1pt solid black;
 }
-.register-instead {
+#register-instead {
     cursor: pointer;
     text-decoration: underline;
 }

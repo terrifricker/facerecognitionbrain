@@ -1,7 +1,10 @@
-.navigation-button {
+nav {
     position: absolute;
     top: 5rem;
-    right: 5rem;
+    right: 5rem;  
+}
+.navigation-button {
     background-color: var(--color1);
     color: black;
+    margin: 2rem;
 }

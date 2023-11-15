@@ -1,7 +1,7 @@
 import './SignIn.css'
 import { useState } from 'react'
 
-export default function SignIn({handleSignIn, handleNeedToRegister}) {
+export default function SignIn({handleSignIn, handleGoToRegister}) {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
@@ -54,7 +54,7 @@ export default function SignIn({handleSignIn, handleNeedToRegister}) {
                     Sign In
                 </button>
                 <p id="register-instead"
-                    onClick={handleNeedToRegister}>
+                    onClick={handleGoToRegister}>
                     Need to Register?
                 </p>
             </form>

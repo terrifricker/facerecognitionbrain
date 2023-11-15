@@ -1,6 +1,7 @@
 import './App.css'
 import { useState } from 'react'
-import Navigation from './components/Navigation/Navigation.js'
+import SignOut from './components/SignOut/SignOut.js'
+import Header from './components/Header/Header.js'
 import Registration from './components/Registration/Registration.js'
 import SignIn from './components/SignIn/SignIn.js'
 import Logo from './components/Logo/Logo.js'
@@ -12,19 +13,22 @@ export default function App() {
   // declare state variables
   const [input, setInput] = useState('')
   const [box, setBox] = useState({})
-  const [route, setRoute] = useState('signin')
-  // current route possibilites are signin, register, and home
+  const [route, setRoute] = useState('landing')
+  // current route possibilites are landing, signin, register, and home
   const [user, setUser] = useState({})
 
   // declare event handler functions
-  function handleSignIn(data) {
-    setUser(data)
-    setRoute('home')
+  function handleGoToSignIn() {
+    setRoute('signin')
   }
-  function handleNeedToRegister() {
+  function handleGoToRegister() {
     setRoute('register')
   }
   function handleRegister(data) {
+    setUser(data)
+    setRoute('home')
+  }
+  function handleSignIn(data) {
     setUser(data)
     setRoute('home')
   }
@@ -83,12 +87,23 @@ export default function App() {
   }
 
   // routing
+  if (route === 'landing') {
+    return (
+      <div className="App">
+        <Header
+          handleGoToSignIn={handleGoToSignIn}
+          handleGoToRegister={handleGoToRegister}
+          handleRegister={handleRegister}
+        />
+      </div>
+    )
+  }
   if (route === 'signin') {
     return (
       <div className="App">
         <SignIn 
           handleSignIn={handleSignIn}
-          handleNeedToRegister={handleNeedToRegister}
+          handleGoToRegister={handleGoToRegister}
         />
       </div>
     )
@@ -105,7 +120,7 @@ export default function App() {
   if (route === 'home')
   return (
     <div className="App">
-      <Navigation 
+      <SignOut 
         handleSignOut={handleSignOut}
       />
       <Logo />
