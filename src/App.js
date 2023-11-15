@@ -21,7 +21,7 @@ export default function App() {
     setUser(data)
     setRoute('home')
   }
-  function handleNeedToRegister() {
+  function handleGoToRegister() {
     setRoute('register')
   }
   function handleRegister(data) {
@@ -88,7 +88,7 @@ export default function App() {
       <div className="App">
         <SignIn 
           handleSignIn={handleSignIn}
-          handleNeedToRegister={handleNeedToRegister}
+          handleGoToRegister={handleGoToRegister}
         />
       </div>
     )
