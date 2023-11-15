@@ -1,5 +1,3 @@
-import './SignOut.css'
-
 export default function SignOut({handleSignOut}) {
     return (
         <nav>
