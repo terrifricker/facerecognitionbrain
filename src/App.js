@@ -113,6 +113,7 @@ export default function App() {
       <div className="App">
         <Registration 
           handleRegister={handleRegister}
+          handleGoToSignIn={handleGoToSignIn}
         />
       </div>
     )
