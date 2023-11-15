@@ -25,7 +25,7 @@ export default function Image( { imageUrl, box }) {
 
     return (
         <>
-            <div className="image-box">
+            <div className="image-container">
                 <img src={imageUrl} alt="face" id="image"></img>
                 <FaceBox 
                     box={box}
