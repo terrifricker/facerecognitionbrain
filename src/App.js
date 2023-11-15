@@ -12,8 +12,8 @@ export default function App() {
   // declare state variables
   const [input, setInput] = useState('')
   const [box, setBox] = useState({})
-  const [route, setRoute] = useState('signin')
-  // current route possibilites are signin, register, and home
+  const [route, setRoute] = useState('landing')
+  // current route possibilites are landing, signin, register, and home
   const [user, setUser] = useState({})
 
   // declare event handler functions
