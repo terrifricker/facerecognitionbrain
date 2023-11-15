@@ -86,6 +86,17 @@ export default function App() {
   }
 
   // routing
+  if (route === 'landing') {
+    return (
+      <div className="App">
+        <Header
+          handleGoToSignIn={handleGoToSignIn}
+          handleGoToRegister={handleGoToRegister}
+          handleRegister={handleRegister}
+        />
+      </div>
+    )
+  }
   if (route === 'signin') {
     return (
       <div className="App">
