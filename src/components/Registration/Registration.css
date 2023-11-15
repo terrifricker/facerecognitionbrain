@@ -7,3 +7,7 @@
     align-items: center;
     border: 1pt solid black;
 }
+#signin-instead {
+    cursor: pointer;
+    text-decoration: underline;
+}

@@ -1,7 +1,7 @@
 import './Registration.css'
 import { useState } from 'react'
 
-export default function Registration({handleRegister}) {
+export default function Registration({handleRegister, handleGoToSignIn}) {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -64,6 +64,10 @@ export default function Registration({handleRegister}) {
                     type="submit"
                     onClick={onSubmitRegister}>
                     Register</button>
+                <p id="signin-instead"
+                    onClick={handleGoToSignIn}>
+                    Sign in instead?
+                </p>
             </form>
         </>
     )
