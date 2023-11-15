@@ -1,6 +1,6 @@
-import './Navigation.css'
+import './SignOut.css'
 
-export default function Navigation({handleSignOut}) {
+export default function SignOut({handleSignOut}) {
     return (
         <nav>
             <button 
