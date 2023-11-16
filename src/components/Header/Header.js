@@ -21,6 +21,7 @@ export default function Header({handleGoToSignIn, handleGoToRegister, handleRegi
             <h1>Magic Face Detection</h1>
             <Registration 
                 handleRegister={handleRegister}
+                handleGoToSignIn={handleGoToSignIn}
             />
         </>
     )
