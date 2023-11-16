@@ -23,7 +23,7 @@ export default function SignIn({handleSignIn, handleGoToRegister}) {
         })
         .then(response => response.json())
         .then(data => {
-            if(data.email === email){
+            if(data.id){
                 handleSignIn(data)
             }
         })
