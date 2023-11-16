@@ -10,6 +10,7 @@ import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm.js'
 import Image from './components/Image/Image.js'
 
 export default function App() {
+
   // declare state variables
   const [input, setInput] = useState('')
   const [box, setBox] = useState({})
@@ -33,6 +34,7 @@ export default function App() {
     setRoute('home')
   }
   function handleSignOut() {
+    setUser({})
     setRoute('signin')
   }
   function handleOnChange(event) {
