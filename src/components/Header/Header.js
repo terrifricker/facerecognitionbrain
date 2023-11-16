@@ -1,8 +1,8 @@
 import './Header.css'
 import Logo from '../Logo/Logo.js'
-import Registration from '../Registration/Registration.js'
+import SignIn from '../SignIn/SignIn.js'
 
-export default function Header({handleGoToSignIn, handleGoToRegister, handleRegister}) {
+export default function Header({handleGoToSignIn, handleGoToRegister, handleSignIn}) {
     return (
         <>
             <Logo />
@@ -19,10 +19,10 @@ export default function Header({handleGoToSignIn, handleGoToRegister, handleRegi
                 </button>
             </nav>
             <h1>Magic Face Detection</h1>
-            <Registration 
-                handleRegister={handleRegister}
-                handleGoToSignIn={handleGoToSignIn}
-            />
+            <SignIn 
+                handleSignIn={handleSignIn}
+                handleGoToRegister={handleGoToRegister}
+        />
         </>
     )
 }

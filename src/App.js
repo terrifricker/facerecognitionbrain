@@ -95,7 +95,7 @@ export default function App() {
         <Header
           handleGoToSignIn={handleGoToSignIn}
           handleGoToRegister={handleGoToRegister}
-          handleRegister={handleRegister}
+          handleSignIn={handleSignIn}
         />
       </div>
     )
