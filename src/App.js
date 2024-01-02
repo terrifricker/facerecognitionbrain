@@ -72,7 +72,7 @@ export default function App() {
     .catch(error => console.log('error', error));
 
     //incremement user count
-    fetch('https://dpg-cma6u2md3nmc73cmvtbg-a.oregon-postgres.render.com/image', { 
+    fetch('https://find-a-face-backend.onrender.com/image', { 
       method: 'put',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({

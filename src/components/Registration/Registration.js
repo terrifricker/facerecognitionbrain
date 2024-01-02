@@ -17,7 +17,7 @@ export default function Registration({handleRegister, handleGoToSignIn}) {
     }
     function onSubmitRegister(event) {
         event.preventDefault()
-        fetch('https://dpg-cma6u2md3nmc73cmvtbg-a.oregon-postgres.render.com/register', { 
+        fetch('https://find-a-face-backend.onrender.com/register', { 
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
