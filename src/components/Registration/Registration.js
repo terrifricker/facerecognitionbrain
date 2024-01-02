@@ -17,7 +17,7 @@ export default function Registration({handleRegister, handleGoToSignIn}) {
     }
     function onSubmitRegister(event) {
         event.preventDefault()
-        fetch('http://localhost:3001/register', { 
+        fetch('http://dpg-cma6u2md3nmc73cmvtbg-a.oregon-postgres.render.com/register', { 
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
