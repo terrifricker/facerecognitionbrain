@@ -19,7 +19,6 @@ export default function Registration({handleRegister, handleGoToSignIn}) {
         event.preventDefault()
         fetch('https://find-a-face-backend.onrender.com/register', { 
             method: 'post',
-            mode: 'cors',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
                 name: name,
